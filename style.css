@@ -1,0 +1,820 @@
+body {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Questrial', sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    background-color: rgba(77, 77, 77, 0.692);
+    list-style: none;
+}
+
+@media (max-width: 600px) {
+    ul p {
+        display: none;
+    }
+    /* li:nth-of-type(2) {
+        margin: 130px;
+    } */
+    .menu {
+        margin: 0px 180px 0px 0px;
+        order: -1;
+    }
+    .cart {
+        margin-right: 40px;
+        order: 3;
+    }
+}
+
+nav i {
+    margin-top: 17px;
+    color: white;
+}
+
+.navText {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav img {
+    width: 10%;
+    height: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.left-content {
+    flex-direction: column;
+    /* border: 3px solid yellow; */
+    width: 30%;
+}
+
+.fa-arrow-left {
+    top: 80px;
+    left: 100px;
+    position: absolute;
+    cursor: pointer;
+}
+
+h1 {
+    bottom: 250px;
+    left: 100px;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: rgb(153,14,33);
+}
+
+h2 {
+    bottom: 190px;
+    left: 100px;
+    position: absolute;
+    font-size: 40px;
+}
+
+.g-review {
+    bottom: 240px;
+    left: 190px;
+    position: absolute;
+}
+
+.a-reviews {
+    bottom: 220px;
+    left: 190px;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 8.5px;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.left-text {
+    bottom: 75px;
+    left: 100px;
+    position: absolute;
+    line-height:2.0;
+}
+
+.imp-info {
+    display: flex;
+    bottom: 40px;
+    left: 180px;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 8.5px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.delivery {
+    margin-left: 20px;
+}
+
+.returns {
+    margin-left: 20px;
+}
+
+.vvd {
+    width: 493.48px;
+    height: 673.06px;
+    margin: 0 auto;
+}
+
+.img-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 440px;
+    bottom: 30px;
+    position: absolute;
+    list-style: none;
+    cursor: pointer;
+}
+
+.img-icons ion-icon {
+    color: white;
+    font-size: 2em;
+}
+
+.img-icons .zoom {
+    font-size: 2.5em;
+}
+
+.img-icons .left, .img-icons .right {
+    margin-top: 5px;
+}
+
+.right-content {
+    width: 30%;
+}
+
+h4 {
+    bottom: 328px;
+    position: absolute;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.tab1, .tab2 {
+    background: none;
+    color: white;
+    border: none;
+    border-bottom: 1px solid rgb(153,14,33);
+    font-size: 11px;
+    padding-bottom: 5px;
+    bottom: 350px;
+    position: absolute;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.tab1 {
+    margin-left: 160px;
+}
+
+.tab2 {
+    margin-left: -130px;
+}
+
+.tab1:focus, .tab2:focus {
+    outline: none;
+    border-bottom: 3.5px solid rgb(153,14,33); 
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 250px;
+    position: absolute;
+}
+
+#player-kits, #kit-badges {
+    color: white;
+    background-color: black;
+    border: 2px solid rgb(153,14,33);
+    padding: 10px 20px;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+.right-content p {
+    bottom: 150px;
+    right: 120px;
+    position: absolute;
+    font-size: 18px;
+}
+
+p input {
+    margin-right: 30px;
+    font-weight: 900;
+}
+
+p input, p label {
+    cursor: pointer;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(153,14,33);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+.sizing {
+    position: relative;
+    left: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+section .counter {
+    display: flex;
+    justify-content: space-between;
+    bottom: 50px;
+    right: 80px;
+    position: absolute;
+    list-style: none;
+    width: 370px;
+}
+
+.number {
+    font-weight: 500;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.plus, .minus {
+    margin-top: 10px;
+    cursor: pointer;
+    color: rgb(153,14,33);
+}
+
+li div button {
+    background: rgb(153,14,33);
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 12px;
+}
+
+li div button:focus {
+    outline: none;
+}
+
+.right-content .et div {
+    color: black;
+} 
+
+@media (max-width: 1433px) {
+    h1, h2, .g-review, .a-review, .left-text, .imp-info {
+        left: 150px;
+        position: absolute;
+     }
+     .g-review {
+        left: 240px;
+        position: absolute;
+    }
+    .a-reviews {
+        left: 240px;
+        position: absolute;
+    }
+    .vvd {
+       left: 350px;
+       position: absolute;
+    }
+    .img-icons {
+        left: 350px;
+        bottom: 5px;
+        position: absolute;
+    }
+    h4 {
+        bottom: -124px;
+        left: 470px;
+        position: absolute;
+    }
+    .tab1, .tab2 {
+        bottom: -100px;
+        left: 530px;
+        position: absolute;
+    }
+    .tab2 {
+        left: 920px;
+        position: absolute;
+    }
+    .dropdown {
+        bottom: -200px;
+        left: 470px;
+        position: absolute;
+    }
+    .right-content p {
+        bottom: -300px;
+        left: 490px;
+        position: absolute;
+    }
+    section .counter {
+        bottom: -400px;
+        left: 450px;
+        position: absolute;
+    }
+    .right-content .et div {
+        bottom: -450px;
+        position: absolute;
+    }
+}
+
+@media (max-width: 1214px) {
+    .vvd {
+        left: 200px;
+        position: absolute;
+     }
+     .img-icons {
+        left: 200px;
+        bottom: 5px;
+        position: absolute;
+    }
+    h1 {
+        left: 420px;
+        bottom: -320px;
+        position: absolute;
+     }
+     h2 {
+        left: 420px;
+        bottom: -380px;
+        position: absolute;
+     }
+     .left-text {
+        left: 420px;
+        bottom: -495px;
+        position: absolute;
+     }
+     .g-review {
+        left: 510px;
+        bottom: -330px;
+        position: absolute;
+    }
+    .a-reviews {
+        left: 510px;
+        bottom: -349px;
+        position: absolute;
+    }
+    .imp-info {
+        left: 420px;
+        bottom: -520px;
+        position: absolute;
+    }
+    h4 {
+        bottom: -640px;
+        left: 410px;
+        position: absolute;
+    }
+    .tab1, .tab2 {
+        bottom: -615px;
+        left: 490px;
+        position: absolute;
+    }
+    .tab2 {
+       left: 880px;
+       position: absolute;
+    }
+    .dropdown {
+       bottom: -715px;
+       left: 410px;
+       position: absolute;
+    }
+    .right-content p {
+        bottom: -815px;
+        left: 450px;
+        position: absolute;
+    }
+    section .counter {
+       bottom: -915px;
+       left: 410px;
+       position: absolute;
+    }
+    .right-content .et div {
+      bottom: -990px;
+      position: absolute;
+    }
+    
+}
+
+@media (max-width: 1150px) {
+    .vvd {
+        left: 150px;
+        position: absolute;
+     }
+     .img-icons {
+        left: 150px;
+        bottom: 5px;
+        position: absolute;
+    }
+    h1 {
+        left: 320px;
+        bottom: -220px;
+        position: absolute;
+     }
+     h2 {
+        left: 320px;
+        bottom: -280px;
+        position: absolute;
+     }
+     .left-text {
+        left: 320px;
+        bottom: -395px;
+        position: absolute;
+     }
+     .g-review {
+        left: 410px;
+        bottom: -230px;
+        position: absolute;
+    }
+    .a-reviews {
+        left: 410px;
+        bottom: -249px;
+        position: absolute;
+    }
+    .imp-info {
+        left: 320px;
+        bottom: -420px;
+        position: absolute;
+    }
+    h4 {
+        bottom: -540px;
+        left: 310px;
+        position: absolute;
+    }
+    .tab1, .tab2 {
+        bottom: -515px;
+        left: 390px;
+        position: absolute;
+    }
+    .tab2 {
+       left: 780px;
+       position: absolute;
+    }
+    .dropdown {
+       bottom: -615px;
+       left: 310px;
+       position: absolute;
+    }
+    .right-content p {
+        bottom: -715px;
+        left: 350px;
+        position: absolute;
+    }
+    section .counter {
+       bottom: -815px;
+       left: 310px;
+       position: absolute;
+    }
+    .right-content .et div {
+      bottom: -890px;
+      position: absolute;
+    }
+    
+}
+
+@media (max-width: 960px) {
+    .vvd {
+        left: 100px;
+        position: absolute;
+     }
+     .img-icons {
+        left: 100px;
+        bottom: 5px;
+        position: absolute;
+    }
+    h1 {
+        left: 220px;
+        bottom: -220px;
+        position: absolute;
+    }
+    h2 {
+        left: 220px;
+        bottom: -280px;
+        position: absolute;
+    }
+ .left-text {
+        left: 220px;
+        bottom: -395px;
+        position: absolute;
+    }
+    .g-review {
+        left: 310px;
+        bottom: -230px;
+        position: absolute;
+    }
+    .a-reviews {
+        left: 310px;
+        bottom: -249px;
+        position: absolute;
+    }
+    .imp-info {
+        left: 220px;
+        bottom: -420px;
+        position: absolute;
+    }
+    h4 {
+        bottom: -540px;
+        left: 210px;
+        position: absolute;
+    }
+    .tab1, .tab2 {
+        bottom: -515px;
+        left: 285px;
+        position: absolute;
+    }
+    .tab2 {
+        left: 680px;
+        position: absolute;
+    }
+    .dropdown {
+        bottom: -615px;
+        left: 210px;
+        position: absolute;
+    }
+    .right-content p {
+        bottom: -715px;
+        left: 250px;
+        position: absolute;
+    }
+    section .counter {
+        bottom: -815px;
+        left: 210px;
+        position: absolute;
+    }
+    .right-content .et div {
+        bottom: -890px;
+        position: absolute;
+    }
+}
+
+@media (max-width: 800px) {
+    .vvd {
+        left: 60px;
+        position: absolute;
+     }
+     .img-icons {
+        left: 60px;
+        bottom: 5px;
+        position: absolute;
+    }
+    h1 {
+        left: 150px;
+        bottom: -220px;
+        position: absolute;
+    }
+    h2 {
+        left: 150px;
+        bottom: -280px;
+        position: absolute;
+    }
+ .left-text {
+        left: 150px;
+        bottom: -395px;
+        position: absolute;
+    }
+    .g-review {
+        left: 240px;
+        bottom: -230px;
+        position: absolute;
+    }
+    .a-reviews {
+        left: 240px;
+        bottom: -249px;
+        position: absolute;
+    }
+    .imp-info {
+        left: 150px;
+        bottom: -420px;
+        position: absolute;
+    }
+    h4 {
+        bottom: -540px;
+        left: 140px;
+        position: absolute;
+    }
+    .tab1, .tab2 {
+        bottom: -515px;
+        left: 200px;
+        position: absolute;
+    }
+    .tab2 {
+        left: 600px;
+        position: absolute;
+    }
+    .dropdown {
+        bottom: -615px;
+        left: 140px;
+        position: absolute;
+    }
+    .right-content p {
+        bottom: -715px;
+        left: 170px;
+        position: absolute;
+    }
+    section .counter {
+        bottom: -815px;
+        left: 130px;
+        position: absolute;
+    }
+    .right-content .et div {
+        bottom: -890px;
+        position: absolute;
+    }
+}
+
+@media (max-width: 638px) {
+    .vvd {
+        left: 15px;
+        position: absolute;
+     }
+     .img-icons {
+        left: 15px;
+        bottom: 5px;
+        position: absolute;
+    }
+    h1 {
+        left: 80px;
+        bottom: -220px;
+        position: absolute;
+    }
+    h2 {
+        left: 80px;
+        bottom: -280px;
+        position: absolute;
+    }
+ .left-text {
+        left: 80px;
+        bottom: -395px;
+        position: absolute;
+    }
+    .g-review {
+        left: 170px;
+        bottom: -230px;
+        position: absolute;
+    }
+    .a-reviews {
+        left: 170px;
+        bottom: -249px;
+        position: absolute;
+    }
+    .imp-info {
+        left: 80px;
+        bottom: -420px;
+        position: absolute;
+    }
+    h4 {
+        bottom: -540px;
+        left: 70px;
+        position: absolute;
+    }
+    .tab1, .tab2 {
+        bottom: -515px;
+        left: 130px;
+        position: absolute;
+    }
+    .tab2 {
+        left: 530px;
+        position: absolute;
+    }
+    .dropdown {
+        bottom: -615px;
+        left: 70px;
+        position: absolute;
+    }
+    .right-content p {
+        bottom: -715px;
+        left: 100px;
+        position: absolute;
+    }
+    section .counter {
+        bottom: -815px;
+        left: 60px;
+        position: absolute;
+    }
+    .right-content .et div {
+        bottom: -890px;
+        position: absolute;
+    }
+}
+
+@media (max-width: 638px) {
+    .vvd {
+        left: 0px;
+        position: absolute;
+     }
+     .img-icons {
+        left: 0px;
+        bottom: 5px;
+        position: absolute;
+    }
+    h1 {
+        left: 20px;
+        bottom: -220px;
+        position: absolute;
+    }
+    h2 {
+        left: 20px;
+        bottom: -280px;
+        position: absolute;
+    }
+    .left-text {
+        left: 20px;
+        bottom: -395px;
+        position: absolute;
+    }
+    .g-review {
+        left: 110px;
+        bottom: -230px;
+        position: absolute;
+    }
+    .a-reviews {
+        left: 110px;
+        bottom: -249px;
+        position: absolute;
+    }
+    .imp-info {
+        left: 20px;
+        bottom: -420px;
+        position: absolute;
+    }
+    h4 {
+        bottom: -540px;
+        left: 10px;
+        position: absolute;
+    }
+    .tab1, .tab2 {
+        bottom: -515px;
+        left: 60px;
+        position: absolute;
+    }
+    .tab2 {
+        left: 470px;
+        position: absolute;
+    }
+    .dropdown {
+        bottom: -615px;
+        left: 10px;
+        position: absolute;
+    }
+    .right-content p {
+        bottom: -715px;
+        left: 20px;
+        position: absolute;
+    }
+    section .counter {
+        bottom: -815px;
+        left: -20px;
+        position: absolute;
+    }
+}
